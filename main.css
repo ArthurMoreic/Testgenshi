@@ -1,0 +1,84 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient( 72deg , rgba( 68, 124, 226, 0.85 ) , rgba( 22, 248, 194, 0.85 )) ;
+}
+
+img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+input {
+    z-index: 1;
+    margin: 20px;
+    position: relative;
+    top: 400px;
+    left: 800px;
+    display: none;
+}
+
+.navigation-bar {
+    position: relative;
+    top: -97px;
+    left: 840px;
+    z-index: 2;
+    display: flex;
+}
+
+label {
+    margin: 0px 20px;
+    color: red;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+/*///////////////////*/
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide {
+    width: 25%;
+    transition: 0.5s;
+}
+
+/*////////////////////////////////*/
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
